@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hero"
+    app:startDestination="@id/heroListFrag">
+
+    <fragment
+        android:id="@+id/heroListFrag"
+        android:name="com.kluivert.superhero.ui.fragments.HeroListFrag"
+        android:label="Hero List"
+        tools:layout="@layout/fragment_hero_list" >
+        <action
+            android:id="@+id/action_heroListFrag_to_heroDetailsFrag"
+            app:destination="@id/heroDetailsFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/heroDetailsFrag"
+        android:name="com.kluivert.superhero.ui.fragments.HeroDetailsFrag"
+        android:label="Hero Details"
+        tools:layout="@layout/fragment_hero_details" >
+        <action
+            android:id="@+id/action_heroDetailsFrag_to_heroListFrag"
+            app:destination="@id/heroListFrag" />
+        <argument
+            android:name="HeroArgs"
+            app:argType="com.kluivert.superhero.data.entities.Hero" />
+    </fragment>
+</navigation>

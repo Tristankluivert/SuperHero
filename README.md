@@ -13,7 +13,7 @@ Simple Superhero app using preloaded data inserted into room database with MVVM 
 
 
 <p align="center">
-<img align="center" src="./screenshots/Screenshot_20200803-100004png" width="240"> 
+<img align="center" src="./screenshots/Screenshot_20200803-100004.png" width="240"> 
 <img align="center" src="./screenshots/Screenshot_20200803-100013.png" width="240"> 
 </p>
 
